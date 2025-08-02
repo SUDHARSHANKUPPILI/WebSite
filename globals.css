@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Classic gradient background */
+html {
+  background: linear-gradient(to right, #f7fafc, #edf2f7);
+}
+html.dark {
+  background: linear-gradient(to right, #1a202c, #2d3748);
+}
+
+/* Button styles */
+.btn {
+  @apply px-4 py-2 rounded-full font-medium shadow-md transition duration-300;
+}
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700 ml-2;
+}
+.btn-outline {
+  @apply border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white;
+}
+.link {
+  @apply text-blue-600 dark:text-blue-400 hover:underline;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
